@@ -1,0 +1,5 @@
+rootProject.name = 'testbatchriadh'
+include ':@bam.tech_react-native-batch'
+project(':@bam.tech_react-native-batch').projectDir = new File(rootProject.projectDir, '../node_modules/@bam.tech/react-native-batch/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
